@@ -19,7 +19,7 @@ Add the following dependencies in the `build.gradle` file:
 
 ```
 dependencies {
-    implementation 'com.TestArc'
+    implementation 'com.Amex'
     }
 ```
 
