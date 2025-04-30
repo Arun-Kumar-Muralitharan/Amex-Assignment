@@ -53,27 +53,27 @@ public class UICommon
         {
             case "chrome":
                 System.out.println("Test Running on Chrome...");
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(headless).setArgs(List.of("--start-maximixed")));
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false).setArgs(List.of("--start-maximixed")));
                 break;
 
             case "firefox":
                 System.out.println("Test Running on Firefox...");
-                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(headless).setArgs(List.of("--start-maximixed")));
+                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximixed")));
                 break;
 
             case "msedge":
                 System.out.println("Test Running on MS Edge...");
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(headless).setArgs(List.of("--start-maximixed")));
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(false).setArgs(List.of("--start-maximixed")));
                 break;
 
             case "webkit":
                 System.out.println("Test Running on Webkit...");
-                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(headless).setArgs(List.of("--start-maximixed")));
+                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false).setArgs(List.of("--start-maximixed")));
                 break;
 
             default:
                 System.out.println("Launching the Default Browser: Edge...");
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(headless).setArgs(List.of("--start-maximixed")));
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(false).setArgs(List.of("--start-maximixed")));
                 resolution = defaultResolution; // Use default resolution for default browser
         }
 
