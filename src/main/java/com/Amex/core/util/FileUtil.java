@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class FileUtil
 {
-    public static final String DEFAULT_PROFILE = "STG";
+    public static final String DEFAULT_PROFILE = "QA";
 
     public static Map<String, Object> getDataBasedOnProfileForResources(String fileName)
     {
