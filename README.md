@@ -49,13 +49,10 @@ junit.jupiter.execution.parallel.config.fixed.parallelism = 4
 ```
 
 ## Installation
-To install the framework, add the TestArc dependency in your local repository's `build.gradle` file.
+To install the framework, add the AmEx dependency in your local repository's `build.gradle` file.
 
 ## Usage
-To use the framework, create a new test class and extend the TestArc methods and classes. 
-
->[!TIP]
-> An example implementation for ui and api is provided under the example package of the test in the Framework.
+To use the framework, create a new test class and extend the AmEx methods and classes. 
 
 ## Running Tests
 Once the ui/api tests are written, they can be run using the following commands:
